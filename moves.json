@@ -1,0 +1,57 @@
+{"states":
+  [
+    "Ready Stance",
+    "Shuffle Forward",
+    "Shuffle Right Forward",
+    "Shuffle Left Forward",
+
+    "Right Foot Forward",
+    "Left Foot Forward",
+
+    "Right Hand Punch To Solar Plexus",
+    "Left Hand Punch To Solar Plexus",
+
+    "Right Hand Uppercut",
+    "Left Hand Uppercut",
+
+    "Right Hand Down Block",
+    "Left Hand Down Block",
+
+    "Right Hand Middle Block",
+    "Left Hand Middle Block",
+
+    "Right Hand Middle Open Block",
+    "Left Hand Middle Open Block",
+
+    "Right Hand Head Block",
+    "Left Hand Head Block",
+
+    "Right Hand Head Block",
+    "Left Hand Head Block",
+
+    "Right Hand Nukite",
+    "Left Hand Nukite",
+
+    "Right Front Snap Kick",
+    "Left Front Snap Kick",
+
+    "Right Front Snap Kick",
+    "Left Front Snap Kick",
+
+    "Right Side Snap Kick",
+    "Left Side Snap Kick",
+
+    "Right Front Thrust Kick",
+    "Left Front Thrust Kick",
+
+    "Right Knee Kick",
+    "Left Knee Kick",
+
+    "Right Back Kick",
+    "Left Back Kick",
+
+    "Right Roundhouse Kick",
+    "Left Roundhouse Kick"
+
+  ]
+}
