@@ -58,7 +58,7 @@ class MarkovArray2D(MarkovArray):
         r = random.randrange(0,prob_sum)
 
 
-        print r
+        #print r
         low = 0
         high = probabilities_array[1]
         for i in range(len(probabilities_array)):
@@ -67,7 +67,7 @@ class MarkovArray2D(MarkovArray):
             if r >= low and r < high:
                 break
 
-        print i
+        #print i
         return [state,self.array_of_states[i]]
 
     #Rating a given chain with a rating, to change the markov array.

@@ -36,7 +36,7 @@ class TestStringMethods(unittest.TestCase):
 
         m2d.printMatrix()
 
-        for i in range(20):
+        for i in range(0):
             state1,state2 = m2d.getStates()[random.randrange(0,len(states))],m2d.getStates()[random.randrange(0,len(states))]
             print state1,state2
             key = raw_input("Is this a good move chain? [Y/N]")
@@ -48,8 +48,12 @@ class TestStringMethods(unittest.TestCase):
         m2d.exportToFile("array2.json")
         m2d.printMatrix()
 
-        #for i in range(10):
-        #   print m2d.randomChain()
+
+        chainstart = m2d.randomChain()
+
+        for i in range(10):
+            chainstart = m2d.getChain(chainstart[1],2)
+            print chainstart[0], " ",
 
 
 if __name__ == '__main__':
