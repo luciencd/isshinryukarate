@@ -30,22 +30,25 @@ class TestStringMethods(unittest.TestCase):
     def test_two_moves(self):
         print "test2"
 
-        m2d = MarkovArray2D(loadStates("moves.json"))
+        m2d = MarkovArray2D(loadStates("JSONMoves/simplemoves.json"))
         states = m2d.getStates()
-        m2d.importFromFile("array2.json")
+        m2d.importFromFile("CachedArrays/array4.json")
 
         m2d.printMatrix()
 
         for i in range(0):
-            state1,state2 = m2d.getStates()[random.randrange(0,len(states))],m2d.getStates()[random.randrange(0,len(states))]
-            print state1,state2
-            key = raw_input("Is this a good move chain? [Y/N]")
-            if(key == "Y"):
-                m2d.rateChain([state1,state2],3)
-            else:
-                m2d.rateChain([state1,state2],0)
+            first_state1,second_state1 = m2d.getStates()[random.randrange(0,len(states))],m2d.getStates()[random.randrange(0,len(states))]
+            first_state2,second_state2 = m2d.getStates()[random.randrange(0,len(states))],m2d.getStates()[random.randrange(0,len(states))]
 
-        m2d.exportToFile("array2.json")
+            print first_state1,second_state1, "OR",first_state2,second_state2
+            key = raw_input("Which state is better, [1] or [2]?")
+
+            if(key == "1"):
+                m2d.rankChain([first_state1,second_state1],[first_state2,second_state2])
+            else:
+                m2d.rankChain([first_state2,second_state2],[first_state1,second_state1])
+
+        m2d.exportToFile("array3.json")
         m2d.printMatrix()
 
 
@@ -53,7 +56,7 @@ class TestStringMethods(unittest.TestCase):
 
         for i in range(10):
             chainstart = m2d.getChain(chainstart[1],2)
-            print chainstart[0], " ",
+            print chainstart[0],", ",
 
 
 if __name__ == '__main__':
