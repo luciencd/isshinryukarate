@@ -50,3 +50,12 @@ I got a C in linear Algebra, which is a good sign: it means I know enough to not
 
 
 -In order to skip ahead some of the training time, you can use a function to take the dot power of the matrix, to accentuate the probabilities and get better results sooner.
+
+
+Todo:
+1. Get Basics catalogued in JSON.
+2. Get 4 first katas (seisan,seiuchin,nihanchi,wansu) in JSON
+3. Get Basic Question and answers for history memorization in JSON.
+4. Randomized move alexa app based on basics.
+5. Entire basics timed in alexa app, with continue options and checkpoints.
+6. Basic question and answer alexa app on karate history.
