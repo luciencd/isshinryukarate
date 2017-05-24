@@ -38,7 +38,7 @@ Attacks must alternate between right and left side.
 The leg responsible for a kick must start from the back position.
 There must be an economy of motion; moves that take less energy, less motion are preferred.
 Fancy attacks are discouraged, but a diversity of simple moves is optimal.
-
+Block, then attack, or attack, then attack.
 Many rules include how you should act if an opponent is sparring with you, but because this is for self training, they are not included in the model(they would also be very difficult to implement).
 
 ## Subclassing.
@@ -59,3 +59,4 @@ Todo:
 4. Randomized move alexa app based on basics.
 5. Entire basics timed in alexa app, with continue options and checkpoints.
 6. Basic question and answer alexa app on karate history.
+7. Make move data structure, so that you can choose if you want just hand moves, just leg moves, standing still or so on...
