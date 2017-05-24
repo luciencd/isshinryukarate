@@ -86,8 +86,14 @@ class MarkovArray2D(MarkovArray): #if randomly assigned, decay rate should make 
         self.markovarray[index1][index2] *= rating
 
     def rankChain(self,markov_chain_1,markov_chain_2):
-        self.rateChainMul(markov_chain_1,1.25)
-        self.rateChainMul(markov_chain_2,0.80)
+        self.rateChainMul(markov_chain_1,1.5)
+        self.rateChainMul(markov_chain_2,0.5)
+
+    #TODO:make this return new markovstructure?
+    #fear that making this permanent might screw stuff up later, but also cant just return naked array.
+    def raiseMatrixPower(self,n):
+        for i in range(n):
+            self.markovarray = np.multiply(self.markovarray,self.markovarray)
 
 
     def exportToFile(self,filename):
@@ -107,5 +113,9 @@ class MarkovArray2D(MarkovArray): #if randomly assigned, decay rate should make 
 
     def printMatrix(self):
         np.set_printoptions(threshold='nan')
-        print self.markovarray
+        #print self.markovarray
+        for i in range(len(self.markovarray)):
+            for j in range(len(self.markovarray[i])):
+                print self.markovarray[i][j], " ",
+            print "\n",
         np.set_printoptions(threshold=6)
